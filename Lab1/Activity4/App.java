@@ -12,12 +12,6 @@ public class App {
         };
         for (Product p : products) {
             System.out.println(p);
-            if (p instanceof ElectricProduct) {
-                ElectricProduct ep = (ElectricProduct) p;
-                ep.addToShoppingCart();
-            }
         }
     }
 }
-
-
