@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.Activity3;
 
 public class ElectricProduct extends Product{
 

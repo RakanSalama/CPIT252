@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.Activity5;
 
 import java.time.LocalDate;
 
@@ -19,3 +19,5 @@ public class App {
         }
     }
 }
+
+
