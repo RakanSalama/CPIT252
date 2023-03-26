@@ -2,8 +2,8 @@
 ## 1. Instance and class variables
 We can fix this code by changing the quantity into static.
 
-    private static int quantity;
-###output: 
+    private static int quantity; 
+######  output: 
 ![image](https://user-images.githubusercontent.com/98660298/227774224-e59f286b-a9fd-488a-ab7d-c4a4f2279e3d.png)
 
 ## 2. Testing
@@ -29,5 +29,5 @@ The Product class should be abstract to prevent it from being instantiated direc
         }
       }
     }
-###output :
+######  output :
 ![image](https://user-images.githubusercontent.com/98660298/227774171-1951c60b-9dd3-469b-a5eb-cea100d34383.png)
