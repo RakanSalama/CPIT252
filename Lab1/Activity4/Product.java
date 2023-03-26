@@ -1,6 +1,6 @@
 package Lab1.Activity4;
 
-public class Product {
+public abstract class Product {
     private int id;
     private double price;
     private String name;
@@ -21,8 +21,8 @@ public class Product {
         System.out.println(this.name + " has been added to the shopping cart.");
     }
 
-    public static int getTotalQuantity() {
-        return Product.quantity;
+    public int getTotalQuantity() {
+        return this.quantity;
     }
 
     public void getSellableStatus() {

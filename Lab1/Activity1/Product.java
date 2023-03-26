@@ -21,8 +21,8 @@ public class Product {
         System.out.println(this.name + " has been added to the shopping cart.");
     }
 
-    public static int getTotalQuantity() {
-        return Product.quantity;
+    public int getTotalQuantity() {
+        return this.quantity;
     }
 
     public void getSellableStatus() {
