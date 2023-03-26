@@ -31,3 +31,47 @@ The Product class should be abstract to prevent it from being instantiated direc
     }
 ######  output :
 ![image](https://user-images.githubusercontent.com/98660298/227774171-1951c60b-9dd3-469b-a5eb-cea100d34383.png)
+## 5. Controlling Changes
+To prevent subclasses from overriding the addToShoppingCart() method of the Product class without changing its visibility, the method can be declared as final. This will prevent any subclasses from overriding the method, while still allowing the method to be visible and accessible.
+
+    public final void addToShoppingCart() {
+        System.out.println(this.name + " has been added to the shopping cart.");
+    }
+## 6. Abstraction
+The Product class should be responsible for managing the product information, but not the order information. To fix this, the order information should be moved to a separate class. This class should be responsible for managing the order information, while the Product class should be responsible for managing the product information.
+
+    public class Order {
+        private int orderId;
+        private String orderStatus;
+    
+    public Order(int orderId, String orderStatus) {
+        this.orderId = orderId;
+        this.orderStatus = "created";
+    }
+    public void setOrderStatus(String newStatus) {
+        this.orderStatus = newStatus;
+    }
+    public String getOrderStatus() {
+        return this.orderStatus;
+    }
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+    public int getOrderId() {
+        return this.orderId;
+       }
+    }
+## 7. Encapsulation
+The weight data is exposed to changes outside the Product class when it is made public. The weight data should be made private and accessible through a public getter/setter method to fix this.
+
+    public class Product {
+
+      private double weight;
+
+        public double getWeight() {
+        return this.weight;
+    }
+    public void setWeight(double weight) {
+        this.weight = weight;
+       }
+    }
