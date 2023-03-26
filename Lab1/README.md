@@ -5,4 +5,5 @@ We can fix this code by changing the quantity into static.
     private static int quantity;
 
 ## 2. Testing
-![image](https://user-images.githubusercontent.com/98660298/227773349-99195d50-2286-4a39-99db-87115f888d95.png)
+![image](https://user-images.githubusercontent.com/98660298/227773575-1e6bcc32-551b-4316-accc-23e8e3c992a9.png)
+
